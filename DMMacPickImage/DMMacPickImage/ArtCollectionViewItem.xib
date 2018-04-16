@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ArtCollectionViewItem">
+            <connections>
+                <outlet property="imageView" destination="8uW-qS-O6Y" id="asI-pR-fT2"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="ItemCell" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8uW-qS-O6Y">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="SVx-n8-BW7"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8uW-qS-O6Y" secondAttribute="bottom" id="36e-N3-dHv"/>
+                <constraint firstItem="8uW-qS-O6Y" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Mn0-xz-8Kt"/>
+                <constraint firstAttribute="trailing" secondItem="8uW-qS-O6Y" secondAttribute="trailing" id="aaE-JM-f1H"/>
+                <constraint firstItem="8uW-qS-O6Y" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="pyV-Mf-ZVv"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

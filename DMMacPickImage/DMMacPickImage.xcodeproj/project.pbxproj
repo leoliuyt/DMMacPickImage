@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B26A5C320849BE8006EBDCC /* ArtCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26A5C220849BE8006EBDCC /* ArtCollectionView.m */; };
+		6B26A5C520849BF4006EBDCC /* ArtCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B26A5C420849BF4006EBDCC /* ArtCollectionView.xib */; };
+		6B26A5C920849E2A006EBDCC /* ArtCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26A5C720849E2A006EBDCC /* ArtCollectionViewItem.m */; };
+		6B26A5CA20849E2A006EBDCC /* ArtCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B26A5C820849E2A006EBDCC /* ArtCollectionViewItem.xib */; };
 		6B29748D207F626400ADE112 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B29748C207F626400ADE112 /* AppDelegate.m */; };
 		6B297490207F626400ADE112 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B29748F207F626400ADE112 /* ViewController.m */; };
 		6B297492207F626500ADE112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B297491207F626500ADE112 /* Assets.xcassets */; };
@@ -16,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B26A5C120849BE8006EBDCC /* ArtCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtCollectionView.h; sourceTree = "<group>"; };
+		6B26A5C220849BE8006EBDCC /* ArtCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtCollectionView.m; sourceTree = "<group>"; };
+		6B26A5C420849BF4006EBDCC /* ArtCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCollectionView.xib; sourceTree = "<group>"; };
+		6B26A5C620849E2A006EBDCC /* ArtCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtCollectionViewItem.h; sourceTree = "<group>"; };
+		6B26A5C720849E2A006EBDCC /* ArtCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtCollectionViewItem.m; sourceTree = "<group>"; };
+		6B26A5C820849E2A006EBDCC /* ArtCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCollectionViewItem.xib; sourceTree = "<group>"; };
 		6B297488207F626400ADE112 /* DMMacPickImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMacPickImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B29748B207F626400ADE112 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B29748C207F626400ADE112 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +95,12 @@
 				6B29748C207F626400ADE112 /* AppDelegate.m */,
 				6B29748E207F626400ADE112 /* ViewController.h */,
 				6B29748F207F626400ADE112 /* ViewController.m */,
+				6B26A5C120849BE8006EBDCC /* ArtCollectionView.h */,
+				6B26A5C220849BE8006EBDCC /* ArtCollectionView.m */,
+				6B26A5C420849BF4006EBDCC /* ArtCollectionView.xib */,
+				6B26A5C620849E2A006EBDCC /* ArtCollectionViewItem.h */,
+				6B26A5C720849E2A006EBDCC /* ArtCollectionViewItem.m */,
+				6B26A5C820849E2A006EBDCC /* ArtCollectionViewItem.xib */,
 				6B297491207F626500ADE112 /* Assets.xcassets */,
 				6B297493207F626500ADE112 /* Main.storyboard */,
 				6B297496207F626500ADE112 /* Info.plist */,
@@ -159,6 +175,8 @@
 			files = (
 				6B297492207F626500ADE112 /* Assets.xcassets in Resources */,
 				6B297495207F626500ADE112 /* Main.storyboard in Resources */,
+				6B26A5C520849BF4006EBDCC /* ArtCollectionView.xib in Resources */,
+				6B26A5CA20849E2A006EBDCC /* ArtCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B26A5C320849BE8006EBDCC /* ArtCollectionView.m in Sources */,
 				6B297490207F626400ADE112 /* ViewController.m in Sources */,
+				6B26A5C920849E2A006EBDCC /* ArtCollectionViewItem.m in Sources */,
 				6B297498207F626500ADE112 /* main.m in Sources */,
 				6B29748D207F626400ADE112 /* AppDelegate.m in Sources */,
 			);

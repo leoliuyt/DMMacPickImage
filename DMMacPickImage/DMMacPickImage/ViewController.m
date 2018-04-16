@@ -9,8 +9,12 @@
 #import "ViewController.h"
 #import <Quartz/Quartz.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "ArtCollectionView.h"
+#import <Masonry.h>
 @interface ViewController()
 @property (weak) IBOutlet NSImageView *imageView;
+
+@property (nonatomic, strong) ArtCollectionView *collectionView;
 
 @end
 @implementation ViewController
@@ -19,16 +23,39 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    NSString *url = @"https://www.showonline.com.cn/image/2c91faca60c4f34a0162a93525e14a43.jpg";
-    //    NSString *url = @"http://web.xinhuamingjia.com/ChinaPainting/mntnas/infoxhmj/mingjiaworkpic/2016/10/09/small_1475978798648.jpg";
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:url]];
+//    NSString *url = @"https://www.showonline.com.cn/image/2c91faca60c4f34a0162a93525e14a43.jpg";
+//    //    NSString *url = @"http://web.xinhuamingjia.com/ChinaPainting/mntnas/infoxhmj/mingjiaworkpic/2016/10/09/small_1475978798648.jpg";
+//    [self.imageView sd_setImageWithURL:[NSURL URLWithString:url]];
+//
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSLog(@"%@",error.localizedDescription);
+//    }];
+//
+//    [task resume];
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"%@",error.localizedDescription);
+//    NSBundle.mainBundle().loadNibNamed("CustomView", owner: self, options: nil).first as? CustomView {
+//        contentView.addSubview(customView)
+    NSArray *arr;
+    BOOL loaded = [[NSBundle mainBundle] loadNibNamed:@"ArtCollectionView" owner:self topLevelObjects:&arr];
+    if (loaded) {
+        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if ([obj isKindOfClass:[ArtCollectionView class]]) {
+                self.collectionView = obj;
+                *stop = YES;
+            }
+        }];
+    }
+    
+    [self.view addSubview:self.collectionView];
+//    self.collectionView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
+    
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.height.equalTo(@60.);
     }];
     
-    [task resume];
+    [self.collectionView setList:nil];
 }
 
 

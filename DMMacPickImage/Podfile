@@ -8,5 +8,5 @@ target 'DMMacPickImage' do
 
   # Pods for DMMacPickImage
   pod 'SDWebImage', '~> 4.3.3'
-
+  pod 'Masonry', '~> 1.0.2'
 end
