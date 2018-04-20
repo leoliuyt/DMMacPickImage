@@ -14,6 +14,11 @@
 
 @implementation ArtCollectionViewItem
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.

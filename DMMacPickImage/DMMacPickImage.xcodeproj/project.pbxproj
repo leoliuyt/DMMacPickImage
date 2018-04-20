@@ -11,11 +11,14 @@
 		6B26A5C520849BF4006EBDCC /* ArtCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B26A5C420849BF4006EBDCC /* ArtCollectionView.xib */; };
 		6B26A5C920849E2A006EBDCC /* ArtCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26A5C720849E2A006EBDCC /* ArtCollectionViewItem.m */; };
 		6B26A5CA20849E2A006EBDCC /* ArtCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B26A5C820849E2A006EBDCC /* ArtCollectionViewItem.xib */; };
+		6B26A5E82085B24A006EBDCC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26A5E72085B24A006EBDCC /* SecondViewController.m */; };
 		6B29748D207F626400ADE112 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B29748C207F626400ADE112 /* AppDelegate.m */; };
 		6B297490207F626400ADE112 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B29748F207F626400ADE112 /* ViewController.m */; };
 		6B297492207F626500ADE112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B297491207F626500ADE112 /* Assets.xcassets */; };
 		6B297495207F626500ADE112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B297493207F626500ADE112 /* Main.storyboard */; };
 		6B297498207F626500ADE112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B297497207F626500ADE112 /* main.m */; };
+		6B59EFDD2085FFEA00D9FDE4 /* ArtCollectionView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B59EFDC2085FFEA00D9FDE4 /* ArtCollectionView2.xib */; };
+		6B59F0112089F04400D9FDE4 /* DMImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B59F0102089F04400D9FDE4 /* DMImageView.m */; };
 		82009B816FCBC4AD7E8DE8F9 /* libPods-DMMacPickImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D34C63761D6E9587148CD22 /* libPods-DMMacPickImage.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,8 @@
 		6B26A5C620849E2A006EBDCC /* ArtCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtCollectionViewItem.h; sourceTree = "<group>"; };
 		6B26A5C720849E2A006EBDCC /* ArtCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtCollectionViewItem.m; sourceTree = "<group>"; };
 		6B26A5C820849E2A006EBDCC /* ArtCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCollectionViewItem.xib; sourceTree = "<group>"; };
+		6B26A5E62085B24A006EBDCC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6B26A5E72085B24A006EBDCC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		6B297488207F626400ADE112 /* DMMacPickImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMacPickImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B29748B207F626400ADE112 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B29748C207F626400ADE112 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		6B297496207F626500ADE112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B297497207F626500ADE112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B297499207F626500ADE112 /* DMMacPickImage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DMMacPickImage.entitlements; sourceTree = "<group>"; };
+		6B59EFDC2085FFEA00D9FDE4 /* ArtCollectionView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCollectionView2.xib; sourceTree = "<group>"; };
+		6B59F00F2089F04400D9FDE4 /* DMImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMImageView.h; sourceTree = "<group>"; };
+		6B59F0102089F04400D9FDE4 /* DMImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMImageView.m; sourceTree = "<group>"; };
 		7D34C63761D6E9587148CD22 /* libPods-DMMacPickImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMMacPickImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEF4974D46231628AF0023F /* Pods-DMMacPickImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMMacPickImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMMacPickImage/Pods-DMMacPickImage.release.xcconfig"; sourceTree = "<group>"; };
 		FDAA25DD96E24B99476F9414 /* Pods-DMMacPickImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMMacPickImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMMacPickImage/Pods-DMMacPickImage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,9 +103,14 @@
 				6B29748C207F626400ADE112 /* AppDelegate.m */,
 				6B29748E207F626400ADE112 /* ViewController.h */,
 				6B29748F207F626400ADE112 /* ViewController.m */,
+				6B59F00F2089F04400D9FDE4 /* DMImageView.h */,
+				6B59F0102089F04400D9FDE4 /* DMImageView.m */,
+				6B26A5E62085B24A006EBDCC /* SecondViewController.h */,
+				6B26A5E72085B24A006EBDCC /* SecondViewController.m */,
 				6B26A5C120849BE8006EBDCC /* ArtCollectionView.h */,
 				6B26A5C220849BE8006EBDCC /* ArtCollectionView.m */,
 				6B26A5C420849BF4006EBDCC /* ArtCollectionView.xib */,
+				6B59EFDC2085FFEA00D9FDE4 /* ArtCollectionView2.xib */,
 				6B26A5C620849E2A006EBDCC /* ArtCollectionViewItem.h */,
 				6B26A5C720849E2A006EBDCC /* ArtCollectionViewItem.m */,
 				6B26A5C820849E2A006EBDCC /* ArtCollectionViewItem.xib */,
@@ -174,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B297492207F626500ADE112 /* Assets.xcassets in Resources */,
+				6B59EFDD2085FFEA00D9FDE4 /* ArtCollectionView2.xib in Resources */,
 				6B297495207F626500ADE112 /* Main.storyboard in Resources */,
 				6B26A5C520849BF4006EBDCC /* ArtCollectionView.xib in Resources */,
 				6B26A5CA20849E2A006EBDCC /* ArtCollectionViewItem.xib in Resources */,
@@ -208,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B59F0112089F04400D9FDE4 /* DMImageView.m in Sources */,
+				6B26A5E82085B24A006EBDCC /* SecondViewController.m in Sources */,
 				6B26A5C320849BE8006EBDCC /* ArtCollectionView.m in Sources */,
 				6B297490207F626400ADE112 /* ViewController.m in Sources */,
 				6B26A5C920849E2A006EBDCC /* ArtCollectionViewItem.m in Sources */,

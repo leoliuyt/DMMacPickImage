@@ -11,6 +11,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface ArtCollectionView()<NSCollectionViewDataSource>
 @property (weak) IBOutlet NSCollectionView *collectionView;
+@property (weak) IBOutlet NSScrollView *scrollView;
 
 @end
 @implementation ArtCollectionView
@@ -26,16 +27,19 @@
 {
     [super awakeFromNib];
 //    NSNib *nib = [[NSNib alloc] initWithNibNamed:@"ArtCollectionViewItem" bundle:nil];
-    self.collectionView.dataSource = self;
-//    [self.collectionView registerNib:nib forItemWithIdentifier:@"ItemCell"];
-    [self.collectionView registerClass:[ArtCollectionViewItem class] forItemWithIdentifier:@"ItemCell"];
-    NSCollectionViewFlowLayout *layout = self.collectionView.collectionViewLayout;
-    layout.itemSize = CGSizeMake(60, 60);
-    layout.scrollDirection = NSCollectionViewScrollDirectionHorizontal;
+    
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
+    self.collectionView.dataSource = self;
+    //    [self.collectionView registerNib:nib forItemWithIdentifier:@"ItemCell"];
+    [self.collectionView registerClass:[ArtCollectionViewItem class] forItemWithIdentifier:@"ItemCell"];
+    NSCollectionViewFlowLayout *layout = self.collectionView.collectionViewLayout;
+    layout.itemSize = CGSizeMake(60, 60);
+    layout.scrollDirection = NSCollectionViewScrollDirectionHorizontal;
+    self.collectionView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (void)setList:(NSArray *)list
@@ -50,7 +54,7 @@
  */
 - (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 30;
+    return 50;
 }
 
 

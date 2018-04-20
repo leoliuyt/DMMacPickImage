@@ -11,10 +11,13 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "ArtCollectionView.h"
 #import <Masonry.h>
+#import "DMImageView.h"
 @interface ViewController()
 @property (weak) IBOutlet NSImageView *imageView;
 
 @property (nonatomic, strong) ArtCollectionView *collectionView;
+
+@property (nonatomic, strong) DMImageView *testImageView;
 
 @end
 @implementation ViewController
@@ -36,28 +39,42 @@
     
 //    NSBundle.mainBundle().loadNibNamed("CustomView", owner: self, options: nil).first as? CustomView {
 //        contentView.addSubview(customView)
-    NSArray *arr;
-    BOOL loaded = [[NSBundle mainBundle] loadNibNamed:@"ArtCollectionView" owner:self topLevelObjects:&arr];
-    if (loaded) {
-        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if ([obj isKindOfClass:[ArtCollectionView class]]) {
-                self.collectionView = obj;
-                *stop = YES;
-            }
-        }];
-    }
     
-    [self.view addSubview:self.collectionView];
-//    self.collectionView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
     
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(self.view);
-        make.height.equalTo(@60.);
+//    NSArray *arr;
+//    BOOL loaded = [[NSBundle mainBundle] loadNibNamed:@"ArtCollectionView" owner:self topLevelObjects:&arr];
+//    if (loaded) {
+//        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            if ([obj isKindOfClass:[ArtCollectionView class]]) {
+//                self.collectionView = obj;
+//                *stop = YES;
+//            }
+//        }];
+//    }
+//    
+//    [self.view addSubview:self.collectionView];
+//    //    self.collectionView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
+//    
+//    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.bottom.equalTo(self.view);
+//        make.height.equalTo(@60.);
+//    }];
+//    
+//    [self.collectionView setList:nil];
+    
+    self.testImageView = [[DMImageView alloc] init];
+    [self.view addSubview:self.testImageView];
+    
+    [self.testImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.height.equalTo(@100.);
     }];
     
-    [self.collectionView setList:nil];
+     self.testImageView.layer.contents = (id)[NSImage imageNamed:@"user_default_autor_background"];
+    
+//    self.view.layer.contents = (id)[NSImage imageNamed:@"user_default_autor_background"];
+    
 }
-
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
@@ -114,4 +131,6 @@
         self.imageView.image = image;
     }
 }
+
+
 @end
